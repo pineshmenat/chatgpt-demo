@@ -1,10 +1,10 @@
-# ChatGPT-API Demo
+# BB-8-API Demo
 
 English | [简体中文](./README.zh-CN.md)
 
 A demo repo based on [OpenAI GPT-3.5 Turbo API.](https://platform.openai.com/docs/guides/chat)
 
-**🍿 Live preview**: https://chatgpt.ddiu.me
+**🍿 Live preview**: https://bb-8.ddiu.me
 
 > ⚠️ Notice: Our API Key limit has been exhausted. So the demo site is not available now.
 
@@ -14,7 +14,7 @@ A demo repo based on [OpenAI GPT-3.5 Turbo API.](https://platform.openai.com/doc
 
 Looking for multi-chat, image-generation, and more powerful features? Take a look at our newly launched [Anse](https://github.com/anse-app/anse).
 
-More info on https://github.com/ddiu8081/chatgpt-demo/discussions/247.
+More info on https://github.com/ddiu8081/bb-8-demo/discussions/247.
 
 [![image](https://user-images.githubusercontent.com/1998168/235048408-ca4015f5-4d3c-4c64-9a6c-9069a89cd23a.png)](https://github.com/anse-app/anse)
 
@@ -50,7 +50,7 @@ More info on https://github.com/ddiu8081/chatgpt-demo/discussions/247.
 
 ### Deploy With Vercel
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fddiu8081%2Fchatgpt-demo&env=OPENAI_API_KEY&envDescription=OpenAI%20API%20Key&envLink=https%3A%2F%2Fplatform.openai.com%2Faccount%2Fapi-keys)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fddiu8081%2Fbb-8-demo&env=OPENAI_API_KEY&envDescription=OpenAI%20API%20Key&envLink=https%3A%2F%2Fplatform.openai.com%2Faccount%2Fapi-keys)
 
 
 
@@ -58,18 +58,18 @@ More info on https://github.com/ddiu8081/chatgpt-demo/discussions/247.
 >
 > Deploy with the [`SITE_PASSWORD`](#environment-variables)
 >
-> <a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fddiu8081%2Fchatgpt-demo&env=OPENAI_API_KEY&env=SITE_PASSWORD&envDescription=OpenAI%20API%20Key&envLink=https%3A%2F%2Fplatform.openai.com%2Faccount%2Fapi-keys" alt="Deploy with Vercel" target="_blank"><img src="https://vercel.com/button" alt="Deploy with Vercel" height=24 style="vertical-align: middle; margin-right: 4px;"></a>
+> <a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fddiu8081%2Fbb-8-demo&env=OPENAI_API_KEY&env=SITE_PASSWORD&envDescription=OpenAI%20API%20Key&envLink=https%3A%2F%2Fplatform.openai.com%2Faccount%2Fapi-keys" alt="Deploy with Vercel" target="_blank"><img src="https://vercel.com/button" alt="Deploy with Vercel" height=24 style="vertical-align: middle; margin-right: 4px;"></a>
 
 ![image](https://cdn.staticaly.com/gh/yzh990918/static@master/20230310/image.4wzfb79qt7k0.webp)
 
 
 ### Deploy With Netlify
 
-[![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ddiu8081/chatgpt-demo#OPENAI_API_KEY=&HTTPS_PROXY=&OPENAI_API_BASE_URL=&HEAD_SCRIPTS=&PUBLIC_SECRET_KEY=&OPENAI_API_MODEL=&SITE_PASSWORD=)
+[![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ddiu8081/bb-8-demo#OPENAI_API_KEY=&HTTPS_PROXY=&OPENAI_API_BASE_URL=&HEAD_SCRIPTS=&PUBLIC_SECRET_KEY=&OPENAI_API_MODEL=&SITE_PASSWORD=)
 
 **Step-by-step deployment tutorial:**
 
-1. [Fork](https://github.com/ddiu8081/chatgpt-demo/fork) this project，Go to [https://app.netlify.com/start](https://app.netlify.com/start) new Site, select the project you `forked` done, and connect it with your `GitHub` account.
+1. [Fork](https://github.com/ddiu8081/bb-8-demo/fork) this project，Go to [https://app.netlify.com/start](https://app.netlify.com/start) new Site, select the project you `forked` done, and connect it with your `GitHub` account.
 
 ![image](https://cdn.staticaly.com/gh/yzh990918/static@master/20230310/image.3nlt4hgzb16o.webp)
 
@@ -87,11 +87,11 @@ More info on https://github.com/ddiu8081/chatgpt-demo/discussions/247.
 
 ### Deploy with Docker
 
-Environment variables refer to the documentation below. [Docker Hub address](https://hub.docker.com/r/ddiu8081/chatgpt-demo).
+Environment variables refer to the documentation below. [Docker Hub address](https://hub.docker.com/r/ddiu8081/bb-8-demo).
 
 **Direct run**
 ```bash
-docker run --name=chatgpt-demo -e OPENAI_API_KEY=YOUR_OPEN_API_KEY -p 3000:3000 -d ddiu8081/chatgpt-demo:latest
+docker run --name=bb-8-demo -e OPENAI_API_KEY=YOUR_OPEN_API_KEY -p 3000:3000 -d ddiu8081/bb-8-demo:latest
 ```
 `-e` define environment variables in the container.
 
@@ -101,9 +101,9 @@ docker run --name=chatgpt-demo -e OPENAI_API_KEY=YOUR_OPEN_API_KEY -p 3000:3000 
 version: '3'
 
 services:
-  chatgpt-demo:
-    image: ddiu8081/chatgpt-demo:latest
-    container_name: chatgpt-demo
+  bb-8-demo:
+    image: ddiu8081/bb-8-demo:latest
+    container_name: bb-8-demo
     restart: always
     ports:
       - '3000:3000'
@@ -147,15 +147,15 @@ You can control the website through environment variables.
 
 Q: TypeError: fetch failed (can't connect to OpenAI Api)
 
-A: Configure environment variables `HTTPS_PROXY`，reference: https://github.com/ddiu8081/chatgpt-demo/issues/34
+A: Configure environment variables `HTTPS_PROXY`，reference: https://github.com/ddiu8081/bb-8-demo/issues/34
 
 Q: throw new TypeError(${context} is not a ReadableStream.)
 
-A: The Node version needs to be `v18` or later，reference: https://github.com/ddiu8081/chatgpt-demo/issues/65
+A: The Node version needs to be `v18` or later，reference: https://github.com/ddiu8081/bb-8-demo/issues/65
 
 Q: Accelerate domestic access without the need for proxy deployment tutorial?
 
-A: You can refer to this tutorial: https://github.com/ddiu8081/chatgpt-demo/discussions/270
+A: You can refer to this tutorial: https://github.com/ddiu8081/bb-8-demo/discussions/270
 
 Q: `PWA` is not working?
 
@@ -166,8 +166,8 @@ This project exists thanks to all those who contributed.
 
 Thank you to all our supporters!🙏
 
-[![img](https://contributors.nn.ci/api?repo=ddiu8081/chatgpt-demo)](https://github.com/ddiu8081/chatgpt-demo/graphs/contributors)
+[![img](https://contributors.nn.ci/api?repo=ddiu8081/bb-8-demo)](https://github.com/ddiu8081/bb-8-demo/graphs/contributors)
 
 ## License
 
-MIT © [ddiu8081](https://github.com/ddiu8081/chatgpt-demo/blob/main/LICENSE)
+MIT © [ddiu8081](https://github.com/ddiu8081/bb-8-demo/blob/main/LICENSE)
